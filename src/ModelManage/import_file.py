@@ -3,7 +3,7 @@
 
 import mysql.connector
 from mysql.connector import Error
-import config
+from src import config
 import os
 
 def read_file(filename):

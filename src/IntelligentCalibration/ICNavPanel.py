@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import wx
-import sys
-import os.path
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-import config
-import sql
+from src import config
+from src import sql
 import mysql.connector
 
 class NavPanel(wx.Panel):
@@ -36,12 +33,12 @@ class NavPanel(wx.Panel):
 
         str = record[0][0]
         """左侧树状图"""
-        root = self.m_treeCtrl4.AddRoot('模型5')
-        tree = [[0] * 10] * 10
-        i = 0
-        for model in record:
-            tree[i] = self.m_treeCtrl4.AppendItem(root, model[0])
-            i += 1
+        # root = self.m_treeCtrl4.AddRoot('模型5')
+        # tree = [[0] * 10] * 10
+        # i = 0
+        # for model in record:
+        #     tree[i] = self.m_treeCtrl4.AppendItem(root, model[0])
+        #     i += 1
         #         os = self.m_treeCtrl4.AppendItem(root, str)
         #         pl = self.m_treeCtrl4.AppendItem(root, str)
         #         tk = self.m_treeCtrl4.AppendItem(root, '工具套件')

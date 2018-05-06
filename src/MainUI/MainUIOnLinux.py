@@ -8,9 +8,9 @@
 ###########################################################################
 
 import wx
-import sys
+# import sys
 
-from src.UncertaintyPropagation import SamplingUIOnLinux as sui
+# from src.UncertaintyPropagation import SamplingUIOnLinux as sui
 
 import src.ModelManage.ModelUi as ModelUi
 

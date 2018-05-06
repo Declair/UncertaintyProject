@@ -3,7 +3,11 @@
 import wx
 import wx.xrc
 import wx.aui
+import matplotlib as mpl
+
+mpl.use('TkAgg')
 import matplotlib.pyplot as plt
+
 # TODO 修改为你的path
 from sys import path
 

@@ -1,8 +1,6 @@
 # -*- coding:utf-8 -*-
 import numpy as np
-import matplotlib as mpl
 
-mpl.use('TkAgg')
 import LHS
 import MenteCarloMethod
 
