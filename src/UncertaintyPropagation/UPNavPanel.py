@@ -23,7 +23,7 @@ class NavPanel(wx.Panel):
             conn = mysql.connector.connect(**db_config)
             cursor = conn.cursor()
             args = ()
-            cursor.execute(sql.modelSql, args)
+            cursor.execute(sql.model_d_Sql, args)
             record = cursor.fetchall()
         except mysql.connector.Error as e:
             print(e)
@@ -31,41 +31,24 @@ class NavPanel(wx.Panel):
             cursor.close()
             conn.close()
 
-        str = record[0][0]
         """左侧树状图"""
-        # root = self.m_treeCtrl4.AddRoot('模型3')
-        # tree = [[0] * 10] * 10
-        # i = 0
-        # for model in record:
-        #     tree[i] = self.m_treeCtrl4.AppendItem(root, model[0])
-        #     i += 1
-        #         os = self.m_treeCtrl4.AppendItem(root, str)
-        #         pl = self.m_treeCtrl4.AppendItem(root, str)
-        #         tk = self.m_treeCtrl4.AppendItem(root, '工具套件')
-        #         self.m_treeCtrl4.AppendItem(os, 'Linux')
-        #         self.m_treeCtrl4.AppendItem(os, 'FreeBSD')
-        #         self.m_treeCtrl4.AppendItem(os, 'OpenBSD')
-        #         self.m_treeCtrl4.AppendItem(os, 'NetBSD')
-        #         self.m_treeCtrl4.AppendItem(os, 'Solaris')
-        #         cl = self.m_treeCtrl4.AppendItem(pl, '编译语言')
-        #         sl = self.m_treeCtrl4.AppendItem(pl, '脚本语言')
-        #         self.m_treeCtrl4.AppendItem(cl, 'Java')
-        #         self.m_treeCtrl4.AppendItem(cl, 'C++')
-        #         self.m_treeCtrl4.AppendItem(cl, 'C')
-        #         self.m_treeCtrl4.AppendItem(cl, 'Pascal')
-        #         self.m_treeCtrl4.AppendItem(sl, 'Ruby')
-        #         self.m_treeCtrl4.AppendItem(sl, 'Tcl')
-        #         self.m_treeCtrl4.AppendItem(sl, 'PHP')
-        #         self.m_treeCtrl4.AppendItem(sl, 'Python')
-        #         self.m_treeCtrl4.AppendItem(tk, 'Qt')
-        #         self.m_treeCtrl4.AppendItem(tk, 'MFC')
-        #         self.m_treeCtrl4.AppendItem(tk, 'wxPython')
-        #         self.m_treeCtrl4.AppendItem(tk, 'GTK+')
-        #         self.m_treeCtrl4.AppendItem(tk, 'Swing')
-        #         self.m_treeCtrl4.Bind(wx.EVT_TREE_SEL_CHANGED,
-        #                        self.OnSelChanged, id=1)
+        root = self.m_treeCtrl4.AddRoot('选择模型实验')
+        tree = [[0] * len(record)] * len(record)
+        i = 0
+        for model in record:
+            tree[i] = self.m_treeCtrl4.AppendItem(root, model[0])
+            i += 1
         bSizer.Add(self.m_treeCtrl4, 1, wx.ALL | wx.EXPAND, 5)
+        """双击选择模型"""
+        self.m_treeCtrl4.Bind(wx.EVT_TREE_ITEM_ACTIVATED,self.SelectModel)
 
+        """"""""""""""""""""
         self.SetSizer(bSizer)
         self.Layout()
         bSizer.Fit(self)
+
+    def SelectModel(self, event):
+        item = self.m_treeCtrl4.GetSelection()
+        print (self.m_treeCtrl4.GetItemText(item))
+        # self.m_treeCtrl4.SetPyData(item, {"Source": "C:\hi.png", "Opacity": item})
+        # print self.m_treeCtrl4.GetPyData(item)
