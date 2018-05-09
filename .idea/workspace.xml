@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c5006ab-a1ed-4d8d-ba5b-3cd4c2157edd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySqlManager/SqlUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySqlManager/SqlUI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UncertaintyPropagation/UPNavPanel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UncertaintyPropagation/UPNavPanel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UncertaintyPropagation/UPShowPanel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UncertaintyPropagation/UPShowPanel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +26,7 @@
     <SUITE FILE_PATH="coverage/UncertaintyProject$MainUIOnLinux__1_.coverage" NAME="MainUIOnLinux (1) Coverage Results" MODIFIED="1525593583328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/MainUI" />
     <SUITE FILE_PATH="coverage/uncertainty$MainUI.coverage" NAME="MainUI Coverage Results" MODIFIED="1525485335092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/MainUI" />
     <SUITE FILE_PATH="coverage/UncertaintyProject$SamplingUIOnLinux__1_.coverage" NAME="SamplingUIOnLinux (1) Coverage Results" MODIFIED="1525591538796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/UncertaintyPropagation" />
-    <SUITE FILE_PATH="coverage/UncertaintyProject$MainUIOnLinux.coverage" NAME="MainUIOnLinux Coverage Results" MODIFIED="1525789546291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/MainUI" />
+    <SUITE FILE_PATH="coverage/UncertaintyProject$MainUIOnLinux.coverage" NAME="MainUIOnLinux Coverage Results" MODIFIED="1525854397710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/MainUI" />
     <SUITE FILE_PATH="coverage/uncertainty$SqlUI.coverage" NAME="SqlUI Coverage Results" MODIFIED="1525481523807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MySqlManager" />
     <SUITE FILE_PATH="coverage/uncertainty$UncertaintyPropagationUi.coverage" NAME="UncertaintyPropagationUi Coverage Results" MODIFIED="1525488000001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/UncertaintyPropagation" />
     <SUITE FILE_PATH="coverage/UncertaintyProject$MainUI.coverage" NAME="MainUI Coverage Results" MODIFIED="1525591545856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/MainUI" />
@@ -35,8 +36,8 @@
       <file leaf-file-name="MainUIOnLinux.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainUI/MainUIOnLinux.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="465">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="e#315#324#0" expanded="true" />
               </folding>
@@ -47,8 +48,8 @@
       <file leaf-file-name="_core.py" pinned="false" current-in-tab="false">
         <entry file="file:///usr/lib/python2.7/dist-packages/wx-3.0-gtk2/wx/_core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="8195" selection-start-line="8195" selection-end-line="8195" />
+            <state relative-caret-position="15">
+              <caret line="14452" selection-start-line="14452" selection-end-line="14452" />
             </state>
           </provider>
         </entry>
@@ -56,8 +57,8 @@
       <file leaf-file-name="NavPanel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ModelManage/NavPanel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="40" column="20" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="40" selection-end-column="20" />
+            <state relative-caret-position="990">
+              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
               <folding>
                 <element signature="e#25#34#0" expanded="true" />
               </folding>
@@ -68,8 +69,8 @@
       <file leaf-file-name="UncertaintyPropagationUi.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UncertaintyPropagation/UncertaintyPropagationUi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="57" column="39" lean-forward="true" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+            <state relative-caret-position="370">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="e#25#34#0" expanded="true" />
               </folding>
@@ -80,11 +81,32 @@
       <file leaf-file-name="UPNavPanel.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UncertaintyPropagation/UPNavPanel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="38" column="65" lean-forward="true" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
+            <state relative-caret-position="625">
+              <caret line="89" column="65" lean-forward="true" selection-start-line="89" selection-start-column="65" selection-end-line="89" selection-end-column="65" />
               <folding>
                 <element signature="e#25#34#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UPShowPanel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UncertaintyPropagation/UPShowPanel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-140">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#25#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SqlUI.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MySqlManager/SqlUI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="57" column="21" selection-start-line="52" selection-start-column="8" selection-end-line="57" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -92,32 +114,17 @@
       <file leaf-file-name="sql.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="76" lean-forward="true" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+            <state relative-caret-position="135">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VANavPanel.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/VerificationAnalysis/VANavPanel.py">
+      <file leaf-file-name="VerificationAnalysisUi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/VerificationAnalysis/VerificationAnalysisUi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-              <folding>
-                <element signature="e#25#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ICNavPanel.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IntelligentCalibration/ICNavPanel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
-              <folding>
-                <element signature="e#25#34#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -163,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/UncertaintyModeling/UncertaintyModeling.py" />
         <option value="$PROJECT_DIR$/src/ModelManage/ShowPanel.py" />
         <option value="$PROJECT_DIR$/src/UncertaintyModeling/UMShowPanel.py" />
-        <option value="$PROJECT_DIR$/src/UncertaintyPropagation/UPShowPanel.py" />
         <option value="$PROJECT_DIR$/src/VerificationAnalysis/VAShowPanel.py" />
         <option value="$PROJECT_DIR$/src/IntelligentCalibration/ICShowPanel.py" />
         <option value="$PROJECT_DIR$/src/UncertaintyModeling/UncertaintyModelingUi.py" />
@@ -183,9 +189,11 @@
         <option value="$PROJECT_DIR$/src/ModelManage/import_file.py" />
         <option value="$PROJECT_DIR$/src/ModelManage/NavPanel.py" />
         <option value="$PROJECT_DIR$/src/UncertaintyModeling/UMNavPanel.py" />
-        <option value="$PROJECT_DIR$/src/VerificationAnalysis/VANavPanel.py" />
         <option value="$PROJECT_DIR$/src/IntelligentCalibration/ICNavPanel.py" />
+        <option value="$PROJECT_DIR$/src/VerificationAnalysis/VANavPanel.py" />
+        <option value="$PROJECT_DIR$/MySqlManager/SqlUI.py" />
         <option value="$PROJECT_DIR$/src/sql.py" />
+        <option value="$PROJECT_DIR$/src/UncertaintyPropagation/UPShowPanel.py" />
         <option value="$PROJECT_DIR$/src/UncertaintyPropagation/UPNavPanel.py" />
       </list>
     </option>
@@ -199,11 +207,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="339" />
-    <option name="y" value="89" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="334" />
+    <option name="y" value="17" />
     <option name="width" value="1301" />
-    <option name="height" value="935" />
+    <option name="height" value="965" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -220,6 +228,11 @@
             <path>
               <item name="UncertaintyProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="UncertaintyProject" type="462c0819:PsiDirectoryNode" />
+              <item name="MySqlManager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UncertaintyProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UncertaintyProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -227,6 +240,12 @@
               <item name="UncertaintyProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="UncertaintyPropagation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UncertaintyProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UncertaintyProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="VerificationAnalysis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -401,21 +420,28 @@
       <option name="project" value="LOCAL" />
       <updated>1525593721530</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="找到未知bug原因:初始化树节点数量比数据库中节点数量少导致越界&#10;&#10;加入双击节点 返回树节点label的功能 将label设置为UNIQUE 则可以唯一确定一个模型">
+      <created>1525789662775</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1525789662775</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="498" y="142" width="1301" height="935" extended-state="0" />
+    <frame x="-1" y="-11" width="1922" height="1025" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.35895464" side_tool="true" visible="true" weight="0.16969697" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.15104167" side_tool="true" visible="true" weight="0.16941693" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.64104533" visible="true" weight="0.16969697" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8489583" visible="true" weight="0.16941693" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20676403" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14010416" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -439,7 +465,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="画树状图的部分出了未知错误 先注释了" />
-    <option name="LAST_COMMIT_MESSAGE" value="画树状图的部分出了未知错误 先注释了" />
+    <MESSAGE value="找到未知bug原因:初始化树节点数量比数据库中节点数量少导致越界&#10;&#10;加入双击节点 返回树节点label的功能 将label设置为UNIQUE 则可以唯一确定一个模型" />
+    <option name="LAST_COMMIT_MESSAGE" value="找到未知bug原因:初始化树节点数量比数据库中节点数量少导致越界&#10;&#10;加入双击节点 返回树节点label的功能 将label设置为UNIQUE 则可以唯一确定一个模型" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/UncertaintyPropagation/UPShowPanel.py">
@@ -596,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VerificationAnalysis/VAShowPanel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UncertaintyModeling/UMShowPanel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -631,25 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VerificationAnalysis/VerificationAnalysisUi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UncertaintyModeling/UncertaintyModelingUi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
           <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySqlManager/SqlUI.py" />
-    <entry file="file://$PROJECT_DIR$/src/UncertaintyPropagation/UPShowPanel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -713,9 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,23 +728,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VerificationAnalysis/VANavPanel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IntelligentCalibration/ICNavPanel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,54 +742,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python2.7/dist-packages/wx-3.0-gtk2/wx/_core.py">
+    <entry file="file://$PROJECT_DIR$/src/UncertaintyModeling/UMNavPanel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="8195" selection-start-line="8195" selection-end-line="8195" />
+        <state relative-caret-position="270">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VerificationAnalysis/VAShowPanel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VerificationAnalysis/VANavPanel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VerificationAnalysis/VerificationAnalysisUi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModelManage/NavPanel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySqlManager/SqlUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="57" column="21" selection-start-line="52" selection-start-column="8" selection-end-line="57" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainUI/MainUIOnLinux.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="465">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#315#324#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UncertaintyModeling/UMNavPanel.py">
+    <entry file="file:///usr/lib/python2.7/dist-packages/wx-3.0-gtk2/wx/_core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ModelManage/NavPanel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="40" selection-end-column="20" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="76" lean-forward="true" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+        <state relative-caret-position="15">
+          <caret line="14452" selection-start-line="14452" selection-end-line="14452" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UncertaintyPropagation/UncertaintyPropagationUi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="57" column="39" lean-forward="true" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+        <state relative-caret-position="370">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UncertaintyPropagation/UPShowPanel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
           </folding>
@@ -809,8 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UncertaintyPropagation/UPNavPanel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="38" column="65" lean-forward="true" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
+        <state relative-caret-position="625">
+          <caret line="89" column="65" lean-forward="true" selection-start-line="89" selection-start-column="65" selection-end-line="89" selection-end-column="65" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
           </folding>

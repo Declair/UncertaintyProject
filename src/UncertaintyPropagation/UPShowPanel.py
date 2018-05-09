@@ -4,10 +4,25 @@ import wx
 from wx import aui
 from wx import grid
 
+from functools import wraps
+
+""""装饰器实现单例模式 方便在NAV界面更新SHOW界面"""
+def singleton(cls):
+    instances = {}
+
+    @wraps(cls)
+    def getinstance(*args, **kw):
+        if cls not in instances:
+            instances[cls] = cls(*args, **kw)
+        return instances[cls]
+
+    return getinstance
+
+@singleton
 class ShowPanel(wx.Panel):
-    
+
     def __init__(self, parent = None):
-        
+
         wx.Panel.__init__(self, parent, wx.ID_ANY, wx.DefaultPosition, 
                           wx.DefaultSize, wx.TAB_TRAVERSAL)
         self.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_3DLIGHT))
@@ -18,7 +33,7 @@ class ShowPanel(wx.Panel):
         self.m_grid4 = wx.grid.Grid(self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0)
 
         # Grid
-        self.m_grid4.CreateGrid(5, 5)
+        self.m_grid4.CreateGrid(5, 4)
         self.m_grid4.EnableEditing(True)
         self.m_grid4.EnableGridLines(True)
         self.m_grid4.EnableDragGridSize(False)
@@ -29,6 +44,10 @@ class ShowPanel(wx.Panel):
         self.m_grid4.EnableDragColSize(True)
         self.m_grid4.SetColLabelSize(30)
         self.m_grid4.SetColLabelAlignment(wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
+        self.m_grid4.SetColLabelValue(0, "模型名称")
+        self.m_grid4.SetColLabelValue(1, "参数名称")
+        self.m_grid4.SetColLabelValue(2, "分布类型")
+        self.m_grid4.SetColLabelValue(3, "分布参数")
 
         # Rows
         self.m_grid4.EnableDragRowSize(True)

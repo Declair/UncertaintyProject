@@ -43,8 +43,7 @@ class ShowResultOfSampling(wx.Frame):
         self.m_grid11.SetColLabelAlignment(wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
         self.m_grid11.SetColLabelValue(0,"抽样编号")
         self.m_grid11.SetColLabelValue(1,"抽样数据")
-        # self.m_grid11.SetColLabelValue(2,"抽样方法")
-        # self.m_grid11.SetColLabelValue(3,"分布类型")
+
 
         # Rows
         self.m_grid11.EnableDragRowSize(True)
@@ -56,8 +55,6 @@ class ShowResultOfSampling(wx.Frame):
         for row in results:
             self.m_grid11.SetCellValue(i,0,str(row[0]))
             self.m_grid11.SetCellValue(i,1,str(row[1]))
-            # self.m_grid11.SetCellValue(i,2,str(row[2]))
-            # self.m_grid11.SetCellValue(i,3,str(row[3]))
             i = i + 1
 
         # Label Appearance
