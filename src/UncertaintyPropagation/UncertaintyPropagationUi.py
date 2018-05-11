@@ -67,8 +67,7 @@ class UncertaintyPropagationPanel(wx.Panel):
         self.button2.Bind(wx.EVT_LEFT_DOWN, self.SamplingSettings)
 
     def SamplingSettings(self, event):
-        frame = sui.SamplingDialogOnLinux(None)
-        frame.Show()
+        self.showPanel.Destroy()
 
     def ClickModelManage(self, event):
         print("11")

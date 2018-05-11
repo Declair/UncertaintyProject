@@ -11,11 +11,11 @@ from SamplingMethod import *
 from MySqlManager import Oursql as oursql
 
 
-class SelectSamplingMethodFrame(wx.Frame):
+class SelectSamplingMethodPanel(wx.Panel):
 
     def __init__(self, parent, kind='normal', *para):
-        wx.Frame.__init__(self, parent, id=wx.ID_ANY, title=u"选择抽样方法", pos=wx.DefaultPosition, size=wx.Size(500, 300),
-                          style=wx.DEFAULT_FRAME_STYLE | wx.TAB_TRAVERSAL)
+        wx.Panel.__init__(self, parent, wx.ID_ANY, wx.DefaultPosition,
+                          wx.DefaultSize, wx.TAB_TRAVERSAL)
 
         self.kind = kind  # 分布类型
         self.para = para  # 参数
@@ -159,12 +159,3 @@ class SelectSamplingMethodFrame(wx.Frame):
         self.m_radioBtn_random.SetValue(False)
         self.m_radioBtn_MC.SetValue(False)
         self.m_radioBtn_LHS.SetValue(False)
-
-'''
-if __name__ == '__main__':
-    app = wx.App(False)
-    paras = [1.0, 0.5]
-    frame = SelectSamplingMethodFrame(None, 'exponential', paras[0], paras[1])
-    frame.Show()
-    app.MainLoop()
-'''
