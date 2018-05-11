@@ -4,6 +4,13 @@ import numpy as np
 import LHS
 import MenteCarloMethod
 
+# 分布名称转对应的编号
+kind_dict = {'normal': 1,
+             'uniform': 2,
+             'exponential': 3,
+             'other': 0
+             }
+
 
 # 抽样方法抽象类
 class SamplingMethod(object):

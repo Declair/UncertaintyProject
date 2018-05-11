@@ -2,7 +2,6 @@
 # from http://www.doc88.com/p-215945997508.html
 
 import numpy as np
-import matplotlib.pyplot as plt
 
 # 计算概率密度函数最大值时的分割数
 # 在给定区间内等距离取cfeji个数计算概率密度函数的最大值
@@ -47,7 +46,7 @@ def getSample(expression, x_low, x_high, size):
 			size -= 1
 	return result
 
-
+'''
 if __name__ == '__main__':
 	expr = '4 * x ** 3'
 	low = 0.0
@@ -57,3 +56,4 @@ if __name__ == '__main__':
 	count, bins, ignored = plt.hist(s, 30, normed=True)
 	plt.plot(bins, 4 * bins ** 3, linewidth=2, color='r')
 	plt.show()
+'''
