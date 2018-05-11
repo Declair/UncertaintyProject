@@ -5,7 +5,6 @@ import wx
 from src import config
 from src import sql
 import mysql.connector
-
 class NavPanel(wx.Panel):
     
     def __init__(self, parent = None):
@@ -31,7 +30,7 @@ class NavPanel(wx.Panel):
             cursor.close()
             conn.close()
             
-        str = record[0][0]
+#        str = record[0][0]
         """左侧树状图"""
         root = self.m_treeCtrl4.AddRoot('模型1')
         tree = [[0]*10]*10

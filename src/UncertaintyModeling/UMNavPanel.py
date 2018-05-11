@@ -31,7 +31,7 @@ class NavPanel(wx.Panel):
             cursor.close()
             conn.close()
 
-        str = record[0][0]
+#        str = record[0][0]
         """左侧树状图"""
         root = self.m_treeCtrl4.AddRoot('模型2')
         tree = [[0] * 10] * 10
