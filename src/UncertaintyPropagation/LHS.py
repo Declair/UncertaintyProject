@@ -9,13 +9,19 @@ import numpy as np
 # import matplotlib.pyplot as pl
 
 # 暂时只能进行对均匀分布做LHS抽样
-# :param D:参数个数
-# :param bounds:参数对应范围（list）
-# :param size:拉丁超立方层数
-# :return:样本数据
 
 
-def getSample(D, bounds, size):
+def getSample(low, high, size):
+    result = np.empty([size])
+    d = 1.0 / size
+    for i in range(0, size):
+        result[i] = np.random.uniform(
+                low=i * d, high=(i + 1) * d, size=1)[0]
+    print result
+    result *= (high - low)
+    print result
+    result += low
+    '''
     result = np.empty([size, D])
     temp = np.empty([size])
     d = 1.0 / size
@@ -44,4 +50,5 @@ def getSample(D, bounds, size):
                        out=result),
            lower_bounds,
            out=result)
+    '''
     return result
