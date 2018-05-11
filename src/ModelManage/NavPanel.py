@@ -5,7 +5,6 @@ import wx
 from src import config
 from src import sql
 import mysql.connector
-
 class NavPanel(wx.Panel):
     
     def __init__(self, parent = None):
