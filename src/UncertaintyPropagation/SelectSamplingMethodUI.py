@@ -7,14 +7,18 @@
 import wx
 import wx.xrc
 
+from SamplingMethod import *
+from MySqlManager import Oursql as oursql
+
 
 class SelectSamplingMethodFrame(wx.Frame):
 
-    def __init__(self, parent, message = 'normal 1.0 0.0'):
+    def __init__(self, parent, kind='normal', *para):
         wx.Frame.__init__(self, parent, id=wx.ID_ANY, title=u"选择抽样方法", pos=wx.DefaultPosition, size=wx.Size(500, 300),
                           style=wx.DEFAULT_FRAME_STYLE | wx.TAB_TRAVERSAL)
 
-        self.message = message
+        self.kind = kind  # 分布类型
+        self.para = para  # 参数
 
         self.SetSizeHints(wx.DefaultSize, wx.DefaultSize)
         self.SetBackgroundColour(wx.SystemSettings.GetColour(wx.SYS_COLOUR_MENU))
@@ -76,6 +80,7 @@ class SelectSamplingMethodFrame(wx.Frame):
 
         self.m_button_ok = wx.Button(self.m_panel_ok, wx.ID_ANY, u"确定", wx.DefaultPosition, wx.DefaultSize, 0)
         bSizer_ok.Add(self.m_button_ok, 0, wx.ALL, 5)
+        self.m_button_ok.Bind(wx.EVT_BUTTON, self.create_sample)
 
         bSizer_ok.AddSpacer(70)
 
@@ -100,24 +105,53 @@ class SelectSamplingMethodFrame(wx.Frame):
     def __del__(self):
         pass
 
+    def set_kind_and_para(self, kind, *para):
+        """ 外部设置分布类型和参数 """
+        self.kind = kind
+        self.para = para
+        self.set_method_enable()  # 重新设置可选的抽样方法
+
     def set_method_enable(self):
         """ 根据样本服从的分布来设置可用的抽样方法 """
-        info = self.message.split()
-        if info[0] == 'normal':
+        if self.kind == 'normal':
             self.m_radioBtn_MC.Enable(False)
             self.m_radioBtn_LHS.Enable(False)
-        elif info[0] == 'exponential':
+        elif self.kind == 'exponential':
             self.m_radioBtn_MC.Enable(False)
             self.m_radioBtn_LHS.Enable(False)
-        elif info[0] == 'uniform':
+        elif self.kind == 'uniform':
             self.m_radioBtn_LHS.Enable(False)
-        elif info[0] == 'other':
+        elif self.kind == 'other':
             self.m_radioBtn_random.Enable(False)
             self.m_radioBtn_LHS.Enable(False)
         else:
             self.m_radioBtn_random.Enable(False)
             self.m_radioBtn_LHS.Enable(False)
             self.m_radioBtn_MC.Enable(False)
+
+    def create_sample(self, event):
+        """ 用户点击确定按钮后开始抽样并写入数据库 """
+        size = int(self.m_textCtrl_size.GetValue())
+        print self.para[0]
+        stra = 0  # 具体策略编号
+        method_name = 'random'  # 具体方法的名称
+        result = None
+        if self.m_radioBtn_random.GetValue():
+            stra = 1
+            method_name = 'random'
+        elif self.m_radioBtn_LHS.GetValue():
+            stra = 2
+            method_name = 'LHS'
+        elif self.m_radioBtn_MC.GetValue():
+            stra = 3
+            method_name = 'MC'
+
+        # FIXME: 这里由于元组的问题，必须传入足够多的参数，传入para的数量是现有分布所需参数个数的最大值
+        result = strategy[stra].GetResult(size, kind_dict[self.kind],
+                                          self.para[0], self.para[1], self.para[2])
+        oursql.clear_sampling_result()
+        oursql.insert_sampling_result(result, self.kind, method_name)
+        print 'Finished creating samples.'
 
     def reset_settings(self, event):
         """ 重置窗口中以输入的数据 """
@@ -126,9 +160,11 @@ class SelectSamplingMethodFrame(wx.Frame):
         self.m_radioBtn_MC.SetValue(False)
         self.m_radioBtn_LHS.SetValue(False)
 
-
+'''
 if __name__ == '__main__':
     app = wx.App(False)
-    frame = SelectSamplingMethodFrame(None)
+    paras = [1.0, 0.5]
+    frame = SelectSamplingMethodFrame(None, 'exponential', paras[0], paras[1])
     frame.Show()
     app.MainLoop()
+'''
